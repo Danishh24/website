@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            .gallery {
+                display: flex;
+                width: 100%;
+                padding: 4% 2%;
+                box-sizing: border-box;
+                height: 70%;;
+            }
+            .box {
+                flex: 1;
+                overflow: hidden;
+                transition: .5s;
+                margin: 0 2%;
+                box-shadow: 0 20px 30px rgba(0,0,0,.1);
+                line-height: 0;
+            }
+            .box > img {
+                width: 200%;
+                height: calc(100% - 10vh);
+                object-fit: cover; 
+                transition: .5s;
+            }
+            .box > h1 {
+                font-size: 3.8vh;
+                display: block;
+                text-align: center;
+                height: 10vh;
+                line-height: 2.6;
+            }
+            .box:hover { flex: 1 1 50%; }
+            .box:hover > img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a class="btn" href="index.html">Home</a></li>
+                <li><a class="btn" href="biodata.html">Biodata</a></li>
+                <li><a class="btn" href="experience.html">Experience</a></li>
+                <li><a class="btn" href="education.html">Education</a></li>
+                <li><a class="btn" href="family.html">Family</a></li>
+                <li><a class="btnactive" href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="gallery">
+            <div class="box">
+                <img src="pic/gallery1.jpg">
+                <h1>pic1</h1>
+            </div>
+            <div class="box">
+                <img src="pic/gallery2.jpg">
+                <h1>pic2</h1>
+            </div>
+            <div class="box">
+                <img src="pic/gallery3.jpg">
+                <h1>pic3</h1>
+            </div>
+            <div class="box">
+                <img src="pic/gallery4.jpg">
+                <h1>pic4</h1>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="box">
+                <img src="pic/gallery5.jpg">
+                <h1>pic5</h1>
+            </div>
+            <div class="box">
+                <img src="pic/gallery6.jpg">
+                <h1>pic6</h1>
+            </div>
+            <div class="box">
+                <img src="pic/gallery7.jpg">
+                <h1>pic7</h1>
+            </div>
+    </div>
+</body>
+</html>
